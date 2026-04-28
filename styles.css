@@ -62,7 +62,7 @@ nav a:hover {
 }
 
 .hero-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 2rem;
     border-radius: 10px;
@@ -136,19 +136,41 @@ ul li {
     margin-bottom: 1rem;
 }
 
-dl {
+.accordion {
     max-width: 800px;
     text-align: left;
 }
 
-dt {
-    font-weight: bold;
-    margin-top: 1rem;
+details {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-dd {
-    margin-bottom: 1rem;
+summary {
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s;
+}
+
+summary:hover {
+    background-color: #e0e0e0;
+}
+
+details[open] summary {
+    background-color: #d0d0d0;
+}
+
+details p {
+    padding: 1rem;
+    margin: 0;
     color: #666;
+    border-radius: 0 0 5px 5px;
 }
 
 footer {
