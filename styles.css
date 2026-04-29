@@ -39,6 +39,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 nav li {
@@ -74,7 +75,7 @@ nav a:focus {
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     color: #1a5f5a;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -137,7 +138,7 @@ nav a:focus {
 
 .section {
     min-height: 100vh;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
