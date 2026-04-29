@@ -81,6 +81,7 @@ nav a:focus {
 }
 
 .hero-image {
+    margin-top: 2rem;
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -419,7 +420,7 @@ footer {
         margin: 0 1.5rem;
     }
 
-    .hero-content h1 {
+    .hero-content {
         font-size: 3rem;
     }
 
@@ -452,7 +453,7 @@ footer {
 }
 
 @media (min-width: 1024px) {
-    .hero-content h1 {
+    .hero-content {
         font-size: 4rem;
     }
 
