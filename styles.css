@@ -327,6 +327,38 @@ main {
 	overflow-wrap: anywhere;
 }
 
+.sobre-mi-layout {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.2rem;
+	align-items: center;
+	width: 100%;
+}
+
+.sobre-mi-imagen {
+	background: var(--card-bg);
+	border: 1px solid var(--card-border);
+	box-shadow: var(--shadow-m);
+	border-radius: 1rem;
+	padding: 0.85rem;
+	max-width: 100%;
+}
+
+.sobre-mi-imagen img {
+	width: 100%;
+	border-radius: 0.8rem;
+	object-fit: cover;
+	max-height: min(48dvh, 30rem);
+	display: block;
+}
+
+.sobre-mi-imagen figcaption {
+	margin-top: 0.55rem;
+	text-align: center;
+	color: var(--ink-soft);
+	font-size: 0.95rem;
+}
+
 .timeline h3,
 .card-obra h3,
 .card-servicio h3,
@@ -367,8 +399,27 @@ details,
 	transition: transform 0.28s ease, border-color 0.28s ease;
 }
 
+.card-servicio img,
+.card-evento img {
+	width: 100%;
+	border-radius: 0.78rem;
+	border: 2px solid transparent;
+	object-fit: cover;
+	aspect-ratio: 4 / 3;
+	display: block;
+	transition: transform 0.28s ease, border-color 0.28s ease;
+}
+
 .card-obra img:hover,
 .card-obra img:focus {
+	transform: scale(1.02);
+	border-color: var(--section-accent);
+}
+
+.card-servicio img:hover,
+.card-servicio img:focus,
+.card-evento img:hover,
+.card-evento img:focus {
 	transform: scale(1.02);
 	border-color: var(--section-accent);
 }
@@ -390,6 +441,14 @@ details,
 .card-evento {
 	border-radius: 0.92rem;
 	padding: 1.15rem 1.05rem;
+}
+
+.card-servicio h3 {
+	margin-top: 0.82rem;
+}
+
+.card-evento h3 {
+	margin-top: 0.82rem;
 }
 
 .card-evento {
@@ -570,6 +629,11 @@ footer {
 	.hero,
 	.section {
 		padding: 4.8rem 2.1rem 3.1rem;
+	}
+
+	.sobre-mi-layout {
+		grid-template-columns: 1.1fr 0.9fr;
+		gap: 1.5rem;
 	}
 
 	.grilla-galeria {
